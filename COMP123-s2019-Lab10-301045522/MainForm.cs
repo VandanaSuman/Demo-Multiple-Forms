@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace COMP123_s2019_Lab10_301045522
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+         MainForm mainForm = new MainForm();
+
+          mainForm.Show(); 
+          StartForm.Hide(); 
+private void MainFormButton_Click(object sender, EventArgs e)
+        {
+            EndForm.Show();
+            MainForm.Hide();
         }
     }
 }
